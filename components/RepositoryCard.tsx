@@ -102,7 +102,7 @@ const RepositoryCard: React.FC<Props> = ({ repo, classes }: Props) => (
           md={8}
           className={classes.verticalCenter}
         >
-          <Typography classes={classes} color="default" className={classes.repositoryDescription}>
+          <Typography color="initial" className={classes.repositoryDescription}>
             {repo.description}
           </Typography>
         </Grid>
