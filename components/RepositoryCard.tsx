@@ -111,7 +111,7 @@ const RepositoryCard: React.FC<Props> = ({ repo, classes }: Props) => (
     <Divider />
     <ExpansionPanelDetails className={classes.panelDetails}>
       {repo.issueCount === 0 ? (
-        <Typography color="default">
+        <Typography color="initial">
           Oops, this repository has no good first issues for now. Let's wait for
           their update.
         </Typography>
