@@ -30,7 +30,7 @@ const IssueList: React.FC<Props> = ({
   return (
     <List component="nav" className={classes.issueList}>
       {issues.map((issue: Issue, i) => (
-        <IssueItem key={i} issue={issue} ownerAvatarUrl={ownerAvatarUrl} />
+        <IssueItem classes={classes} key={i} issue={issue} ownerAvatarUrl={ownerAvatarUrl} />
       ))}
     </List>
   );
