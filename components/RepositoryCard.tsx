@@ -116,7 +116,7 @@ const RepositoryCard: React.FC<Props> = ({ repo, classes }: Props) => (
           their update.
         </Typography>
       ) : (
-        <IssueList issues={repo.issues} ownerAvatarUrl={repo.owner.avatarUrl} />
+        <IssueList classes={classes} issues={repo.issues} ownerAvatarUrl={repo.owner.avatarUrl} />
       )}
     </ExpansionPanelDetails>
   </ExpansionPanel>
