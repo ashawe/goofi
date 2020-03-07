@@ -81,6 +81,7 @@ const Index: FC<Props> = ({ classes, language, goodFirstIssues }) => {
   return (
     <Paper elevation={1} className={classes.paper}>
       <Header
+        classes={classes}
         language={language}
         fetchedRepositoryCount={repositories.length}
         totalRepositoryCount={repositoryCount}
