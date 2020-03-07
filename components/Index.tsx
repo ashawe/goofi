@@ -88,7 +88,7 @@ const Index: FC<Props> = ({ classes, language, goodFirstIssues }) => {
       />
       <Grid container={true} justify={"center"}>
         <Grid item={true} xs={12} sm={10} md={10} lg={8}>
-          <RepositoryList loading={loading} repos={repositories} />
+          <RepositoryList classes={classes} loading={loading} repos={repositories} />
           <ButtonArea
             loading={loading}
             handleClick={fetchMoreRepositories}
