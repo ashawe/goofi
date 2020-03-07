@@ -27,7 +27,7 @@ const RepositoryList: React.FC<Props> = ({ repos, classes }: Props) => {
   return (
     <div className={classes.body}>
       {repos.map((repo: Repository) => (
-        <RepositoryCard key={repo.id} repo={repo} />
+        <RepositoryCard classes={classes} key={repo.id} repo={repo} />
       ))}
     </div>
   );
