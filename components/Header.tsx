@@ -18,13 +18,13 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 export function Grouped(language) {
   function handleInputChange(event,value){
     console.log(event.value);// not required but value is needed therefore have to use this
-    console.log(language);
     window.location.href = `/?language=${value.value}`;
   }
 
   return (
     <Autocomplete
       id="language"
+      value={language}
       options={languageOptions}
       groupBy={option => option.type}
       getOptionLabel={option => option.name}
